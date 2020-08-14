@@ -1,18 +1,17 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
-
 import { fetchSmurfInfo } from "../store"
 
 const Smurfs = (props) => {
     useEffect(() => {
         props.fetchSmurfInfo();
-    },[])
+    },[]);
 
   return (
     <section>
       <h2>Smurfs Village!</h2>
       {props.isLoading ? <h4>Loading Smurfs...</h4> : null}
-      {props.error ? (<p style={{ color: "red" }}>OOPS! Error loading:${props.error}!</p>) : null}
+      {props.error ? (<p style={{ color: "red" }}>OOPS! Error loading!</p>) : null}
       {props.smurfInfo.length > 0 ? (
         <div className='factContainer'>
           {props.smurfInfo.map((smurfInfo) => (

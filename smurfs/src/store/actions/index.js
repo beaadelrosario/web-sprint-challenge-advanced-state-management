@@ -1,5 +1,7 @@
 export  { 
-    FETCH_SMURF_START, 
+    FETCH_SMURF_START,
+    FETCH_SMURF_FAIL, 
+    FETCH_SMURF_SUCCESS,
     fetchSmurfInfo, 
-    FETCH_SMURF_SUCCESS } from "./smurfActions";
+} from "./smurfActions";
 
