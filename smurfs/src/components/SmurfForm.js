@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { postSmurf } from "../store/actions/smurfActions";
+import { connect } from 'react-redux';
 
 const initialFormValues = {
   name: "",
@@ -70,4 +71,12 @@ const SmurfForm = (props) => {
   );
 };
 
-export default SmurfForm;
+const mapStateToProps = state => {
+    return {
+        isPosting: state.isPosting,
+        formError: state.formError
+    }
+}
+
+export default connect(mapStateToProps,{postSmurf})(SmurfForm);
+
