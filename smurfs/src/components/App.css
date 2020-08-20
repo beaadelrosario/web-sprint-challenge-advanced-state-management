@@ -1,11 +1,19 @@
 .App {
+
   text-align: center;
+  background: #88CCFF;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.Header {
+  background: black;
+  color: azure;
+}
+
 * {
-  background: #88CCFF;
-  line-height: 20px;
+  margin: 0 auto;
+  max-width: 680px;
+  text-align: center;
 }
 form {
   display: flex;
