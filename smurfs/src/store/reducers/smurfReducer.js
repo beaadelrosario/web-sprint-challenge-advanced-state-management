@@ -4,7 +4,7 @@ import {
   FETCH_SMURF_FAIL,
   POST_SMURF_START,
   POST_SMURF_SUCCESS,
-  POST_SMURF_FAIL
+  POST_SMURF_FAIL,
 } from "../actions";
 
 const initialState = {

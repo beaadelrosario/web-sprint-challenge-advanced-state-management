@@ -5,10 +5,11 @@ import SmurfForm from "./SmurfForm"
 
 const Smurfs = (props) => {
     useEffect(() => {
+      console.log(props);
         props.fetchSmurfInfo();
-    },[]);
+    },[props.smurfInfo.length]);
 
-  return (
+  return ( 
     <section>
       <SmurfForm />
       <h2>Smurfs Village!</h2>
